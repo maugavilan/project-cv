@@ -40,11 +40,13 @@ formulario.addEventListener("submit", (e) => {
 const habilidades = document.querySelectorAll("#habilidades ul li");
 
 habilidades.forEach((habilidad) => {
-    const porcentaje = habilidad.getAttribute("data-porcentaje");
+    const porcentajeInicio = habilidad.getAttribute("data-porcentaje");
+    const porcentajeFinal = 100 - parseInt(habilidad.getAttribute("data-porcentaje"));
     const colorInicio = "green";
     const colorFinal = "white";
 
-    habilidad.style.background = `linear-gradient(to right, ${colorInicio} ${porcentaje}%, ${colorFinal} ${porcentaje}%`;
+    habilidad.style.background = `linear-gradient(to right, ${colorInicio} ${porcentajeInicio}%, ${colorFinal} ${porcentajeFinal}%`;
+    console.log(habilidad.style.background);
 });
 
 
