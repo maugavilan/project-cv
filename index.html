@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio personal</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mi nombre</h1>
+        <h2>Mi profesión</h2>
+    </header>
+    <nav class="menu-fijo">
+        <ul>
+            <a href="#acerca-de-mi">Acerca de mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </ul>
+    </nav>
+    <main>
+        <section id="acerca-de-mi">
+            <h2>Acerca de mí</h2>
+            <p>
+                Soy un apasionado del desarrollo web con experiencia en HTML, CSS y JavaScript. Estoy en constante
+                aprendizaje y buscando nuevos desafíos para mejorar mis habilidades.
+            </p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li data-porcentaje="100">HTML</li>
+                <li data-porcentaje="80">CSS</li>
+                <li data-porcentaje="70">JavaScript</li>
+                <li data-porcentaje="60">Git</li>
+                <li data-porcentaje="50">Metodologías ágiles</li>
+            </ul>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>
+                    <b>Empresa X</b> (2022-presente)
+                    <ul>
+                        <li>Desarrollador web junior</li>
+                        <li>Responsable del desarrollo y mantenimiento de la página web de la empresa</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Empresa Y</strong> (2020-2022)
+                    <ul>
+                        <li>Diseñador web</li>
+                        <li>Responsable del diseño y maquetación de la página web de la empresa</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <ul>
+                <li>
+                    <a href="proyecto-1.html">Proyecto 1</a> - Descripción del proyecto 1
+                </li>
+                <li>
+                    <a href="proyecto-2.html">Proyecto 2</a> - Descripción del proyecto 2
+                </li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Si tienes alguna pregunta o quieres contactarme, puedes hacerlo a través del siguiente formulario:
+            </p>
+            <form action="#">
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="email" name="email" placeholder="Correo electrónico">
+                <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
